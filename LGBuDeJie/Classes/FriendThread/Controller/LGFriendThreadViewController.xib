@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LGFriendThreadViewController">
+            <connections>
+                <outlet property="loginButton" destination="9bZ-Oy-Ecm" id="CW4-WF-bIj"/>
+                <outlet property="view" destination="dVo-w7-2Q9" id="o5Y-hW-4Fr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="dVo-w7-2Q9">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpG-re-Qlf">
+                    <rect key="frame" x="77" y="303" width="221.5" height="61"/>
+                    <string key="text">快登录吧，关注百思最in牛人
+     好友动态让你过把瘾儿～
+                 欧耶～～～！</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_cry_icon" translatesAutoresizingMaskIntoConstraints="NO" id="fR3-Xe-L5v">
+                    <rect key="frame" x="163.5" y="215" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="VgB-H2-N44"/>
+                        <constraint firstAttribute="height" constant="48" id="qv9-5R-Fbk"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bZ-Oy-Ecm">
+                    <rect key="frame" x="66" y="404" width="243" height="48"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="243" id="P96-ov-aw5"/>
+                        <constraint firstAttribute="height" constant="48" id="xmt-Ia-aDu"/>
+                    </constraints>
+                    <state key="normal" title="立即登录注册" backgroundImage="friendsTrend_login_click">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="highlighted" backgroundImage="friendsTrend_login_click">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickLogin:" destination="-1" eventType="touchUpInside" id="XXv-qa-QSu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cpG-re-Qlf" firstAttribute="centerX" secondItem="dVo-w7-2Q9" secondAttribute="centerX" id="D7y-yc-nAQ"/>
+                <constraint firstItem="9bZ-Oy-Ecm" firstAttribute="centerX" secondItem="dVo-w7-2Q9" secondAttribute="centerX" id="Eaq-w5-L5D"/>
+                <constraint firstItem="cpG-re-Qlf" firstAttribute="centerY" secondItem="dVo-w7-2Q9" secondAttribute="centerY" id="S3J-4I-Hsl"/>
+                <constraint firstItem="9bZ-Oy-Ecm" firstAttribute="top" secondItem="cpG-re-Qlf" secondAttribute="bottom" constant="40" id="lz7-xy-L2O"/>
+                <constraint firstItem="cpG-re-Qlf" firstAttribute="top" secondItem="fR3-Xe-L5v" secondAttribute="bottom" constant="40" id="myp-bF-QA7"/>
+                <constraint firstItem="fR3-Xe-L5v" firstAttribute="centerX" secondItem="dVo-w7-2Q9" secondAttribute="centerX" id="wBd-PG-RN7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="uMH-mu-2qv"/>
+            <point key="canvasLocation" x="178" y="56"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="friendsTrend_login_click" width="243" height="48"/>
+        <image name="header_cry_icon" width="48" height="48"/>
+    </resources>
+</document>

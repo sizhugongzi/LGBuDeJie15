@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" id="DcA-Ei-LoO" customClass="LGCategoryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DcA-Ei-LoO" id="zox-r5-kri">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agH-8H-2hP">
+                        <rect key="frame" x="0.0" y="42.5" width="320" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="v6i-Ps-5Rx"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GfX-Gs-LXg">
+                        <rect key="frame" x="0.0" y="0.0" width="5" height="43.5"/>
+                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="I70-qn-Ija"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uNJ-CI-etu"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6p-ri-OkB">
+                        <rect key="frame" x="139" y="11.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="agH-8H-2hP" secondAttribute="bottom" id="1C6-Aa-FUt"/>
+                    <constraint firstItem="U6p-ri-OkB" firstAttribute="centerY" secondItem="zox-r5-kri" secondAttribute="centerY" id="AEv-Oz-83h"/>
+                    <constraint firstAttribute="bottom" secondItem="GfX-Gs-LXg" secondAttribute="bottom" id="Pnt-27-QWb"/>
+                    <constraint firstItem="GfX-Gs-LXg" firstAttribute="leading" secondItem="zox-r5-kri" secondAttribute="leading" id="Ubl-4O-QEW"/>
+                    <constraint firstItem="agH-8H-2hP" firstAttribute="leading" secondItem="zox-r5-kri" secondAttribute="leading" id="YDM-0B-h3C"/>
+                    <constraint firstAttribute="trailing" secondItem="agH-8H-2hP" secondAttribute="trailing" id="m6R-is-3Tt"/>
+                    <constraint firstItem="GfX-Gs-LXg" firstAttribute="top" secondItem="zox-r5-kri" secondAttribute="top" id="um7-GR-dO5"/>
+                    <constraint firstItem="U6p-ri-OkB" firstAttribute="centerX" secondItem="zox-r5-kri" secondAttribute="centerX" id="ykE-4Z-NgT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="ygn-vq-hHk"/>
+            <connections>
+                <outlet property="indicatorView" destination="GfX-Gs-LXg" id="TUc-fu-1ru"/>
+                <outlet property="nameView" destination="U6p-ri-OkB" id="n01-2Z-p3g"/>
+            </connections>
+            <point key="canvasLocation" x="221" y="-56"/>
+        </tableViewCell>
+    </objects>
+</document>

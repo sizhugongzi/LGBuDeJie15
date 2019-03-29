@@ -1,0 +1,28 @@
+//
+//  LGBuDeJie.pch
+//  LGBuDeJie
+//
+//  Created by 甘延娇 on 2019/3/14.
+//  Copyright © 2019 itheima. All rights reserved.
+//
+
+#ifndef LGBuDeJie_pch
+#define LGBuDeJie_pch
+
+#import "UIView+Frame.h"
+#import "UIColor+Custom.h"
+
+#define LGScreenH [UIScreen mainScreen].bounds.size.height
+#define LGScreenW [UIScreen mainScreen].bounds.size.width
+
+#define CachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory,NSUserDomainMask,YES) firstObject]
+
+#define LGBaseUrl @"http://api.budejie.com/api/api_open.php"
+
+#define SystemVersion [[UIDevice currentDevice].systemVersion floatValue]
+#define iPhoneX (LGScreenH == 812)
+#define iPhone6P (LGScreenH == 736)
+#define iPhone6 (LGScreenH == 667)
+#define iPhone5 (LGScreenH == 568)
+
+#endif /* LGBuDeJie_pch */

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LGSeeBigPictureViewController">
+            <connections>
+                <outlet property="scrollView" destination="DC2-tU-WIR" id="hde-uk-LYz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DC2-tU-WIR">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPc-J2-Nvj">
+                    <rect key="frame" x="20" y="64" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="8hy-4f-hGk"/>
+                        <constraint firstAttribute="height" constant="35" id="nQn-Wp-3Cl"/>
+                    </constraints>
+                    <state key="normal" image="show_image_back_icon"/>
+                    <connections>
+                        <action selector="dismiss:" destination="-1" eventType="touchUpInside" id="a5F-ne-Bs5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFf-Ii-ehA">
+                    <rect key="frame" x="357" y="808" width="37" height="34"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="保存"/>
+                    <connections>
+                        <action selector="save:" destination="-1" eventType="touchUpInside" id="7Zk-27-n8M"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DC2-tU-WIR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="89V-u3-3hW"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="VFf-Ii-ehA" secondAttribute="trailing" constant="20" id="CY1-Rb-qa8"/>
+                <constraint firstAttribute="trailing" secondItem="DC2-tU-WIR" secondAttribute="trailing" id="Ex7-hg-TTS"/>
+                <constraint firstItem="DC2-tU-WIR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UtD-Pr-YPd"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="VFf-Ii-ehA" secondAttribute="bottom" constant="20" id="Y1a-5Y-saG"/>
+                <constraint firstAttribute="bottom" secondItem="DC2-tU-WIR" secondAttribute="bottom" id="daJ-Zp-fst"/>
+                <constraint firstItem="jPc-J2-Nvj" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="lVV-cE-esD"/>
+                <constraint firstItem="jPc-J2-Nvj" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="vfm-4c-Cjo"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="137.68115942028987" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="show_image_back_icon" width="35" height="35"/>
+    </resources>
+</document>
